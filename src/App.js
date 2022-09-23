@@ -7,7 +7,9 @@ import ExperienceInfo from "./Components/ExperienceInfo";
 function App() {
   return (
     <div>
-      <h1>React CV Builder</h1>
+      <header>
+        <h1>React CV Builder</h1>
+      </header>
       <GeneralInfo />
       <EducationInfo />
       <ExperienceInfo />
