@@ -5,7 +5,13 @@ import ExperienceInfo from "./Components/ExperienceInfo";
 
 function App() {
   return (
-    <div>We're alive!</div>
+    <div>
+      <h1>React CV Builder</h1>
+      <GeneralInfo />
+      <EducationInfo />
+      <ExperienceInfo />
+    </div>
+
   );
 }
 
