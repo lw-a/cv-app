@@ -18,19 +18,26 @@ class ExperienceInfo extends React.Component {
     this.setState({[name]: value});
   }
 
+  handleSubmit(e) {
+    e.preventDefault();
+  }
+
   render() {
     return (
       <div>
         <h2>Work Experience</h2>
-        <input type='text' placeholder='Company Name' name='companyName' onChange={this.handleChange} value={this.state.companyName} />
+        <form onSubmit={this.handleSubmit}>
+          <input type='text' placeholder='Company Name' name='companyName' onChange={this.handleChange} value={this.state.companyName} />
 
-        <input type='text' placeholder='Position' name='position' onChange={this.handleChange} value={this.state.position} />
+          <input type='text' placeholder='Position' name='position' onChange={this.handleChange} value={this.state.position} />
 
-        <input type='date' name='from' onChange={this.handleChange} value={this.state.from} />
+          <input type='date' name='from' onChange={this.handleChange} value={this.state.from} />
 
-        <input type='date' name='to' onChange={this.handleChange} value={this.state.to} />
+          <input type='date' name='to' onChange={this.handleChange} value={this.state.to} />
 
-        <textarea id='tasks' placeholder='Job Tasks' name='tasks' onChange={this.handleChange} value={this.state.tasks} />
+          <textarea id='tasks' placeholder='Job Tasks' name='tasks' onChange={this.handleChange} value={this.state.tasks} />
+          <button>Save</button>
+        </form>
 
       </div>
     )
