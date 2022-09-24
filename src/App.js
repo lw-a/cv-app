@@ -9,8 +9,8 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      educations: [],
-      works: []
+      educations: [<EducationInfo key={uniqid()} />],
+      works: [<ExperienceInfo key={uniqid()} />]
     }
     this.handleClick = this.handleClick.bind(this);
     this.handleDelete = this.handleDelete.bind(this);
