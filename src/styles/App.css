@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
+  background-color: #FFFDFB;
 }
 
 main {
@@ -15,17 +16,19 @@ main {
 
 h1 {
   text-align: center;
-
+  font-size: 2.3rem;
+  margin: 1px 0px;
 }
 
 h2 {
   text-align: center;
   margin-top: 18px;
   font-weight: 500;
-  text-decoration: underline;
-  text-decoration-style: solid;
+  border-bottom: 2px solid;
   padding-bottom: 6px;
   margin: 6px 0px;
+  font-size: 1.8rem;
+
 }
 
 section {
@@ -52,7 +55,8 @@ textarea {
 
 .userDetails {
 	margin: 0px 30px;
-	font-size: 24px;
+	font-size: 1.5rem;
+  margin-bottom: 18px;
 }
 
 p {
@@ -63,6 +67,6 @@ p {
 	float: right;
 	margin-right: 20px;
 	cursor: pointer;
-  background-color: white;
+  background-color: #FFFDFB;
   border: none;
 }

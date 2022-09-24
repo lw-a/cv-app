@@ -10,7 +10,6 @@ function UserDetails(props) {
 			<p><strong>from:</strong> {from}</p>
 			<p><strong>to:</strong> {to}</p>
 			<p><strong>Tasks:</strong> {tasks}</p>
-      <br></br>
 		</div>
 	);
 }

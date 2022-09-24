@@ -9,7 +9,6 @@ function UserDetails(props) {
 			<button onClick={handleClick} className="editbtn">✏️</button>
 			<p><strong>from:</strong> {from}</p>
 			<p><strong>to:</strong> {to}</p>
-      <br></br>
 		</div>
 	);
 }
