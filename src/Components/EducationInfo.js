@@ -56,13 +56,17 @@ class EducationInfo extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type='text' placeholder='School Name' name='school' onChange={this.handleChange} value={school} />
+        <label htmlFor='school'>School Name:</label>
+          <input type='text' placeholder='Sunflower Academy' name='school' id='school' onChange={this.handleChange} value={school} />
 
-          <input type='text' placeholder='Type of Study' name='type' onChange={this.handleChange} value={type} />
+          <label htmlFor='type'>Type of Study:</label>
+          <input type='text' placeholder='Dragon Style' name='type' id='type' onChange={this.handleChange} value={type} />
 
-          <input type='date' name='from' onChange={this.handleChange} value={from} />
+          <label htmlFor='from'>From:</label>
+          <input type='date' name='from' id='from' onChange={this.handleChange} value={from} />
 
-          <input type='date' name='to' onChange={this.handleChange} value={to} />
+          <label htmlFor='to'>To:</label>
+          <input type='date' name='to' id='to' onChange={this.handleChange} value={to} />
           <button type='submit'>Save</button>
         </form>
       </div>
