@@ -34,6 +34,13 @@ class App extends React.Component {
   };
 
   render() {
+    const educationExp = this.state.educations.map((id) => (
+			<EducationInfo key={id} id={id} handleDelete={this.handleDelete} />
+		));
+		const workExp = this.state.works.map((id) => (
+			<ExperienceInfo key={id} id={id} handleDelete={this.handleDelete} />
+		));
+
     return (
       <div>
         <header>
@@ -46,12 +53,12 @@ class App extends React.Component {
           </div>
           <div>
             <h2>Education</h2>
-            {this.state.educations}
+            {educationExp}
             <button onClick={() => this.handleClick('education')}>Add</button>
           </div>
           <div>
           <h2>Work Experience</h2>
-            {this.state.works}
+            {workExp}
             <button onClick={() => this.handleClick('work')}>Add</button>
           </div>
         </main>
