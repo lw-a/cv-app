@@ -60,15 +60,20 @@ class ExperienceInfo extends React.Component {
     return (
       <div>
         <form onSubmit={this.handleSubmit}>
-          <input type='text' placeholder='Company Name' name='companyName' onChange={this.handleChange} value={companyName} />
+        <label htmlFor='companyName'>Company Name:</label>
+          <input type='text' placeholder='Tojo Clan' name='companyName' id='companyName' onChange={this.handleChange} value={companyName} />
 
-          <input type='text' placeholder='Position' name='position' onChange={this.handleChange} value={position} />
+          <label htmlFor='position'>Position:</label>
+          <input type='text' placeholder='Chairman' name='position' id='position' onChange={this.handleChange} value={position} />
 
-          <input type='date' name='from' onChange={this.handleChange} value={from} />
+          <label htmlFor='from'>From:</label>
+          <input type='date' name='from' id='from' onChange={this.handleChange} value={from} />
 
-          <input type='date' name='to' onChange={this.handleChange} value={to} />
+          <label htmlFor='to'>To:</label>
+          <input type='date' name='to' id='to' onChange={this.handleChange} value={to} />
 
-          <textarea id='tasks' placeholder='Job Tasks' name='tasks' onChange={this.handleChange} value={tasks} />
+          <label htmlFor='tasks'>Tasks:</label>
+          <textarea placeholder='Make sure every runs smoothly' name='tasks' id='tasks' onChange={this.handleChange} value={tasks} />
           <button type='submit'>Save</button>
         </form>
 
