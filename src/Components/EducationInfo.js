@@ -4,6 +4,7 @@ function UserDetails(props) {
 	const { school, type, from, to, handleClick } = props;
 	return (
 		<div>
+      <h2>Education</h2>
 			<p><strong>School Name:</strong> {school}</p>
 			<p><strong>Type of Study:</strong> {type}</p>
 			<p><strong>from:</strong> {from}</p>

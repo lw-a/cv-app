@@ -4,6 +4,7 @@ function UserDetails(props) {
 	const { firstName, lastName, email, phone, handleClick } = props;
 	return (
 		<div>
+      <h2>General Info</h2>
 			<p><strong>First Name:</strong> {firstName}</p>
 			<p><strong>Last Name:</strong> {lastName}</p>
 			<p><strong>Email:</strong> {email}</p>
