@@ -3,12 +3,12 @@ import React from 'react';
 function UserDetails(props) {
 	const { firstName, lastName, email, phone, handleClick } = props;
 	return (
-		<div>
+		<div className='userDetails'>
 			<p><strong>First Name:</strong> {firstName}</p>
 			<p><strong>Last Name:</strong> {lastName}</p>
+			<button onClick={handleClick} className="editbtn">✏️</button>
 			<p><strong>Email:</strong> {email}</p>
 			<p><strong>Phone:</strong> {phone}</p>
-			<button onClick={handleClick}>Edit</button>
 		</div>
 	);
 }

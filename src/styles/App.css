@@ -2,6 +2,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 main {
@@ -14,6 +15,7 @@ main {
 
 h1 {
   text-align: center;
+
 }
 
 h2 {
@@ -22,7 +24,8 @@ h2 {
   font-weight: 500;
   text-decoration: underline;
   text-decoration-style: solid;
-  padding-bottom: 12px;
+  padding-bottom: 6px;
+  margin: 6px 0px;
 }
 
 section {
@@ -45,4 +48,21 @@ textarea {
 	width: 90%;
 	margin-bottom: 12px;
 	padding-bottom: 42px;
+}
+
+.userDetails {
+	margin: 0px 30px;
+	font-size: 24px;
+}
+
+p {
+  margin: 6px 0px;
+}
+
+.editbtn {
+	float: right;
+	margin-right: 20px;
+	cursor: pointer;
+  background-color: white;
+  border: none;
 }

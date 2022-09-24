@@ -3,13 +3,14 @@ import React from 'react';
 function UserDetails(props) {
 	const { companyName, position, from, to, tasks, handleClick } = props;
 	return (
-		<div>
+		<div className='userDetails'>
 			<p><strong>Company Name:</strong> {companyName}</p>
 			<p><strong>Position:</strong> {position}</p>
+			<button onClick={handleClick} className="editbtn">✏️</button>
 			<p><strong>from:</strong> {from}</p>
 			<p><strong>to:</strong> {to}</p>
 			<p><strong>Tasks:</strong> {tasks}</p>
-			<button onClick={handleClick}>Edit</button>
+      <br></br>
 		</div>
 	);
 }
