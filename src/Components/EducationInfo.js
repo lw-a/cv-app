@@ -57,17 +57,17 @@ class EducationInfo extends React.Component {
     return (
       <section>
         <form onSubmit={this.handleSubmit}>
-        <label htmlFor='school'>School Name:</label>
-          <input type='text' placeholder='Sunflower Academy' name='school' id='school' onChange={this.handleChange} value={school} />
+        <label htmlFor='school'><p>School Name:</p>
+          <input type='text' placeholder='Sunflower Academy' name='school' id='school' onChange={this.handleChange} value={school} /></label>
 
-          <label htmlFor='type'>Type of Study:</label>
-          <input type='text' placeholder='Dragon Style' name='type' id='type' onChange={this.handleChange} value={type} />
+          <label htmlFor='type'><p>Type of Study:</p>
+          <input type='text' placeholder='Dragon Style' name='type' id='type' onChange={this.handleChange} value={type} /></label>
 
-          <label htmlFor='from'>From:</label>
-          <input type='date' name='from' id='from' onChange={this.handleChange} value={from} />
+          <label htmlFor='from'><p>From:</p>
+          <input type='date' name='from' id='from' onChange={this.handleChange} value={from} /></label>
 
-          <label htmlFor='to'>To:</label>
-          <input type='date' name='to' id='to' onChange={this.handleChange} value={to} />
+          <label htmlFor='to'><p>To:</p>
+          <input type='date' name='to' id='to' onChange={this.handleChange} value={to} /></label>
           <button type='submit' className='btn'>Save</button> <button type='button' onClick={() => handleDelete('educations', id)} className='btn'> Delete </button>
         </form>
       </section>

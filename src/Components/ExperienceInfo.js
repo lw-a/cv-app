@@ -61,20 +61,20 @@ class ExperienceInfo extends React.Component {
     return (
       <section>
         <form onSubmit={this.handleSubmit}>
-        <label htmlFor='companyName'>Company Name:</label>
-          <input type='text' placeholder='Tojo Clan' name='companyName' id='companyName' onChange={this.handleChange} value={companyName} />
+        <label htmlFor='companyName'><p>Company Name:</p>
+          <input type='text' placeholder='Tojo Clan' name='companyName' id='companyName' onChange={this.handleChange} value={companyName} /></label>
 
-          <label htmlFor='position'>Position:</label>
-          <input type='text' placeholder='Chairman' name='position' id='position' onChange={this.handleChange} value={position} />
+          <label htmlFor='position'><p>Position:</p>
+          <input type='text' placeholder='Chairman' name='position' id='position' onChange={this.handleChange} value={position} /></label>
 
-          <label htmlFor='from'>From:</label>
-          <input type='date' name='from' id='from' onChange={this.handleChange} value={from} />
+          <label htmlFor='from'><p>From:</p>
+          <input type='date' name='from' id='from' onChange={this.handleChange} value={from} /></label>
 
-          <label htmlFor='to'>To:</label>
-          <input type='date' name='to' id='to' onChange={this.handleChange} value={to} />
+          <label htmlFor='to'><p>To:</p>
+          <input type='date' name='to' id='to' onChange={this.handleChange} value={to} /></label>
 
-          <label htmlFor='tasks'>Tasks:</label>
-          <textarea placeholder='Make sure every runs smoothly' name='tasks' id='tasks' onChange={this.handleChange} value={tasks} />
+          <label htmlFor='tasks' className='tasks'><p>Tasks:</p>
+          <textarea placeholder='Make sure every runs smoothly' name='tasks' id='tasks' onChange={this.handleChange} value={tasks} /></label>
 
           <button type='submit' className='btn'>Save</button> <button type='button' onClick={() => handleDelete('works', id)} className='btn'> Delete </button>
         </form>

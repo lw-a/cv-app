@@ -61,17 +61,15 @@ class App extends React.Component {
           <h2>General Information</h2>
             <GeneralInfo />
           </div>
-          <div>
+          <div className="sectionDiv">
             <h2>Education Experience</h2>
-            <EducationInfo />
             {educationExp}
-            <button onClick={() => this.handleClick('education')}>Add</button>
+            <button onClick={() => this.handleClick('education')} className='btn addbtn'>Add</button>
           </div>
-          <div>
+          <div className="sectionDiv">
           <h2>Work Experience</h2>
-            <ExperienceInfo />
             {workExp}
-            <button onClick={() => this.handleClick('work')}>Add</button>
+            <button onClick={() => this.handleClick('work')} className='btn addbtn'>Add</button>
           </div>
         </main>
       </div>
