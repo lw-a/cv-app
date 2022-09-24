@@ -10,6 +10,7 @@ class App extends React.Component {
     super(props)
     this.state = {
       educations: [],
+      works: []
     }
     this.handleClick = this.handleClick.bind(this);
   }
@@ -22,8 +23,14 @@ class App extends React.Component {
           <EducationInfo key={uniqid()} />]
         }
       })
+    } else if (section === 'work') {
+      this.setState((prevState) => {
+        return {
+          works: [...prevState.works,
+          <ExperienceInfo key={uniqid()} />]
+        }
+      })
     }
-
   };
 
   render() {
@@ -33,13 +40,16 @@ class App extends React.Component {
           <h1>React CV Builder</h1>
         </header>
         <GeneralInfo />
-        {/* <EducationInfo /> */}
         <div>
           <h2>Education</h2>
           {this.state.educations}
           <button onClick={() => this.handleClick('education')}>Add</button>
         </div>
-        <ExperienceInfo />
+        <div>
+        <h2>Work Experience</h2>
+          {this.state.works}
+          <button onClick={() => this.handleClick('work')}>Add</button>
+        </div>
       </div>
 
     );

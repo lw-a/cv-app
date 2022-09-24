@@ -4,7 +4,6 @@ function UserDetails(props) {
 	const { companyName, position, from, to, tasks, handleClick } = props;
 	return (
 		<div>
-      <h2>Work Experience</h2>
 			<p><strong>Company Name:</strong> {companyName}</p>
 			<p><strong>Position:</strong> {position}</p>
 			<p><strong>from:</strong> {from}</p>
@@ -60,7 +59,6 @@ class ExperienceInfo extends React.Component {
 
     return (
       <div>
-        <h2>Work Experience</h2>
         <form onSubmit={this.handleSubmit}>
           <input type='text' placeholder='Company Name' name='companyName' onChange={this.handleChange} value={companyName} />
 
