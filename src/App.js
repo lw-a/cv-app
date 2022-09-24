@@ -1,6 +1,5 @@
 import React from "react";
 import uniqid from 'uniqid';
-import PrintProvider, { NoPrint, Print } from 'react-easy-print';
 import GeneralInfo from "./Components/GeneralInfo";
 import EducationInfo from "./Components/EducationInfo";
 import ExperienceInfo from "./Components/ExperienceInfo";
