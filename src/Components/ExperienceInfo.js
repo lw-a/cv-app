@@ -38,7 +38,7 @@ class ExperienceInfo extends React.Component {
     e.preventDefault();
     this.setState((prevState) => {
       return {editMode: !prevState.editMode};
-    })
+    });
   }
 
   render() {
@@ -53,7 +53,7 @@ class ExperienceInfo extends React.Component {
 					from={from}
 					to={to}
 					tasks={tasks}
-					handleEdit={this.handleSubmit}
+					handleClick={this.handleSubmit}
 				/>
 			);
 		}
