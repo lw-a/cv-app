@@ -39,17 +39,19 @@ class App extends React.Component {
         <header>
           <h1>React CV Builder</h1>
         </header>
-        <GeneralInfo />
-        <div>
-          <h2>Education</h2>
-          {this.state.educations}
-          <button onClick={() => this.handleClick('education')}>Add</button>
-        </div>
-        <div>
-        <h2>Work Experience</h2>
-          {this.state.works}
-          <button onClick={() => this.handleClick('work')}>Add</button>
-        </div>
+        <main>
+          <GeneralInfo />
+          <div>
+            <h2>Education</h2>
+            {this.state.educations}
+            <button onClick={() => this.handleClick('education')}>Add</button>
+          </div>
+          <div>
+          <h2>Work Experience</h2>
+            {this.state.works}
+            <button onClick={() => this.handleClick('work')}>Add</button>
+          </div>
+        </main>
       </div>
 
     );
