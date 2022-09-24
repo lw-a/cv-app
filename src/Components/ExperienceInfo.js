@@ -75,8 +75,8 @@ class ExperienceInfo extends React.Component {
 
           <label htmlFor='tasks'>Tasks:</label>
           <textarea placeholder='Make sure every runs smoothly' name='tasks' id='tasks' onChange={this.handleChange} value={tasks} />
-          <button type='submit'>Save</button>
-          <button type='submit'>Save</button> <button type='button' onClick={() => handleDelete('works', id)}> Delete </button>
+
+          <button type='submit' className='btn'>Save</button> <button type='button' onClick={() => handleDelete('works', id)} className='btn'> Delete </button>
         </form>
 
       </section>

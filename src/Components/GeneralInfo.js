@@ -55,21 +55,21 @@ class GeneralInfo extends React.Component {
 		}
 
     return(
-      <section>
+      <section className='general'>
         <form onSubmit={this.handleSubmit}>
-          <label htmlFor='firstName'>First Name:</label>
-          <input type='text' placeholder='Kazuma' name='firstName' id='firstName' onChange={this.handleChange} value={firstName} />
+          <label htmlFor='firstName'><p>First Name:</p>
+          <input type='text' placeholder='Kazuma' name='firstName' id='firstName' onChange={this.handleChange} value={firstName} /></label>
 
-          <label htmlFor='lastName'>Last Name:</label>
-          <input type='text' placeholder='Kiryu' name='lastName' id='lastName' onChange={this.handleChange} value={lastName} />
+          <label htmlFor='lastName'><p>Last Name:</p>
+          <input type='text' placeholder='Kiryu' name='lastName' id='lastName' onChange={this.handleChange} value={lastName} /></label>
 
-          <label htmlFor='email'>Email Address:</label>
-          <input type='text' placeholder='dragon@dojima.jp' name='email' id='email' onChange={this.handleChange} value={email} />
+          <label htmlFor='email'><p>Email Address:</p>
+          <input type='text' placeholder='dragon@dojima.jp' name='email' id='email' onChange={this.handleChange} value={email} /></label>
 
-          <label htmlFor='phone'>Phone Number:</label>
-          <input type='text' placeholder='0617196800' name='phone' id='phone' onChange={this.handleChange} value={phone} />
+          <label htmlFor='phone'><p>Phone Number:</p>
+          <input type='text' placeholder='0617196800' name='phone' id='phone' onChange={this.handleChange} value={phone} /></label>
 
-          <button type='submit'>Save</button>
+          <button type='submit' className='btn'>Save</button>
         </form>
       </section>
     )

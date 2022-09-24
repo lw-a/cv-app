@@ -31,19 +31,32 @@ h2 {
 
 }
 
-section {
+form {
 	display: grid;
-	grid-template-columns: repeat(1, 100%);
-	grid-template-rows: repeat(3, auto);
+	grid-template-columns: repeat(2, 50%);
 	justify-items: center;
 	align-items: center;
 	padding: 6px;
+}
+
+.btn {
+	cursor: pointer;
+  padding: 6px 10px;
+  border: 1px solid;
+  border-radius: 15%;
+  background-color: #FFFDFB;
+}
+
+.general .btn {
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
 label {
 	width: 90%;
 	height: 100%;
 	margin: 12px;
+  text-align: center;
 }
 
 textarea {
