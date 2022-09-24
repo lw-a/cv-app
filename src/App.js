@@ -13,6 +13,7 @@ class App extends React.Component {
       works: []
     }
     this.handleClick = this.handleClick.bind(this);
+    this.handleDelete = this.handleDelete.bind(this);
   }
 
   handleClick(section) {
@@ -32,6 +33,15 @@ class App extends React.Component {
       })
     }
   };
+
+  handleDelete(section, id) {
+		this.setState((prevState) => {
+			let updatedList = prevState[section].filter((key) => key !== id);
+			return {
+				[section]: updatedList,
+			};
+		});
+  }
 
   render() {
     const educationExp = this.state.educations.map((id) => (
