@@ -63,7 +63,7 @@ class GeneralInfo extends React.Component {
           <input type='text' placeholder='Kazuma' name='firstName' id='firstName' onChange={this.handleChange} value={firstName} />
 
           <label htmlFor='lastName'>Last Name:</label>
-          <input type='text' placeholder='Kazuma' name='lastName' id='lastName' onChange={this.handleChange} value={lastName} />
+          <input type='text' placeholder='Kiryu' name='lastName' id='lastName' onChange={this.handleChange} value={lastName} />
 
           <label htmlFor='email'>Email Address:</label>
           <input type='text' placeholder='dragon@dojima.jp' name='email' id='email' onChange={this.handleChange} value={email} />

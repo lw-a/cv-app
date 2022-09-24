@@ -37,7 +37,7 @@ class App extends React.Component {
     return (
       <div>
         <header>
-          <h1>React CV Builder</h1>
+          <h1>React CV</h1>
         </header>
         <main>
           <GeneralInfo />
