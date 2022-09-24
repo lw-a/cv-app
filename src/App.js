@@ -6,6 +6,17 @@ import ExperienceInfo from "./Components/ExperienceInfo";
 import './styles/App.css';
 
 class App extends React.Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      educations: [],
+    }
+  }
+
+  handleClick(section) {
+
+  };
+
   render() {
     return (
       <div>
@@ -14,6 +25,9 @@ class App extends React.Component {
         </header>
         <GeneralInfo />
         <EducationInfo />
+        <div>
+          <button onClick={this.handleClick('education')}></button>
+        </div>
         <ExperienceInfo />
       </div>
 
