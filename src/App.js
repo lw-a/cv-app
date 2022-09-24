@@ -11,9 +11,18 @@ class App extends React.Component {
     this.state = {
       educations: [],
     }
+    this.handleClick = this.handleClick.bind(this);
   }
 
   handleClick(section) {
+    if (section === 'education') {
+      this.setState((prevState) => {
+        return {
+          educations: [...prevState.educations,
+          <EducationInfo key={uniqid()} />]
+        }
+      })
+    }
 
   };
 
@@ -24,9 +33,11 @@ class App extends React.Component {
           <h1>React CV Builder</h1>
         </header>
         <GeneralInfo />
-        <EducationInfo />
+        {/* <EducationInfo /> */}
         <div>
-          <button onClick={this.handleClick('education')}></button>
+          <h2>Education</h2>
+          {this.state.educations}
+          <button onClick={() => this.handleClick('education')}>Add</button>
         </div>
         <ExperienceInfo />
       </div>
