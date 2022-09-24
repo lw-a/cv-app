@@ -1,4 +1,5 @@
 import React from 'react';
+import { NoPrint } from 'react-easy-print';
 
 function UserDetails(props) {
 	const { companyName, position, from, to, tasks, handleClick } = props;
