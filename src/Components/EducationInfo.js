@@ -68,9 +68,7 @@ class EducationInfo extends React.Component {
 
           <label htmlFor='to'>To:</label>
           <input type='date' name='to' id='to' onChange={this.handleChange} value={to} />
-          <button type='submit'>Save</button>					<button type='button' onClick={() => handleDelete('educations', id)}>
-						Delete
-					</button>
+          <button type='submit'>Save</button> <button type='button' onClick={() => handleDelete('educations', id)}> Delete </button>
         </form>
       </section>
     )

@@ -43,6 +43,7 @@ class ExperienceInfo extends React.Component {
 
   render() {
     const { editMode, companyName, position, from, to, tasks } = this.state;
+    const { id, handleDelete } = this.props;
 
 		if (!editMode) {
 			return (
@@ -75,6 +76,7 @@ class ExperienceInfo extends React.Component {
           <label htmlFor='tasks'>Tasks:</label>
           <textarea placeholder='Make sure every runs smoothly' name='tasks' id='tasks' onChange={this.handleChange} value={tasks} />
           <button type='submit'>Save</button>
+          <button type='submit'>Save</button> <button type='button' onClick={() => handleDelete('works', id)}> Delete </button>
         </form>
 
       </section>
