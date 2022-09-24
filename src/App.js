@@ -40,7 +40,10 @@ class App extends React.Component {
           <h1>React CV</h1>
         </header>
         <main>
-          <GeneralInfo />
+          <div>
+          <h2>General Info</h2>
+            <GeneralInfo />
+          </div>
           <div>
             <h2>Education</h2>
             {this.state.educations}

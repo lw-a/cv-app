@@ -4,7 +4,6 @@ function UserDetails(props) {
 	const { firstName, lastName, email, phone, handleClick } = props;
 	return (
 		<div>
-      <h2>General Info</h2>
 			<p><strong>First Name:</strong> {firstName}</p>
 			<p><strong>Last Name:</strong> {lastName}</p>
 			<p><strong>Email:</strong> {email}</p>
@@ -56,8 +55,7 @@ class GeneralInfo extends React.Component {
 		}
 
     return(
-      <div>
-        <h2>General Info</h2>
+      <section>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor='firstName'>First Name:</label>
           <input type='text' placeholder='Kazuma' name='firstName' id='firstName' onChange={this.handleChange} value={firstName} />
@@ -73,7 +71,7 @@ class GeneralInfo extends React.Component {
 
           <button type='submit'>Save</button>
         </form>
-      </div>
+      </section>
     )
   }
 }

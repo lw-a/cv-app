@@ -54,7 +54,7 @@ class EducationInfo extends React.Component {
 			);
 		}
     return (
-      <div>
+      <section>
         <form onSubmit={this.handleSubmit}>
         <label htmlFor='school'>School Name:</label>
           <input type='text' placeholder='Sunflower Academy' name='school' id='school' onChange={this.handleChange} value={school} />
@@ -69,7 +69,7 @@ class EducationInfo extends React.Component {
           <input type='date' name='to' id='to' onChange={this.handleChange} value={to} />
           <button type='submit'>Save</button>
         </form>
-      </div>
+      </section>
     )
   }
 }

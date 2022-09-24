@@ -58,7 +58,7 @@ class ExperienceInfo extends React.Component {
 		}
 
     return (
-      <div>
+      <section>
         <form onSubmit={this.handleSubmit}>
         <label htmlFor='companyName'>Company Name:</label>
           <input type='text' placeholder='Tojo Clan' name='companyName' id='companyName' onChange={this.handleChange} value={companyName} />
@@ -77,7 +77,7 @@ class ExperienceInfo extends React.Component {
           <button type='submit'>Save</button>
         </form>
 
-      </div>
+      </section>
     )
   }
 }
