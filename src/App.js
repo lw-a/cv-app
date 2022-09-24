@@ -1,8 +1,9 @@
 import React from "react";
-import './styles/App.css';
+import uniqid from 'uniqid';
 import GeneralInfo from "./Components/GeneralInfo";
 import EducationInfo from "./Components/EducationInfo";
 import ExperienceInfo from "./Components/ExperienceInfo";
+import './styles/App.css';
 
 function App() {
   return (
