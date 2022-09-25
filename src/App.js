@@ -1,5 +1,6 @@
 import React from "react";
 import uniqid from 'uniqid';
+import ReactToPrint from 'react-to-print';
 import GeneralInfo from "./Components/GeneralInfo";
 import EducationInfo from "./Components/EducationInfo";
 import ExperienceInfo from "./Components/ExperienceInfo";
@@ -56,7 +57,7 @@ class App extends React.Component {
         <header>
           <h1>React CV</h1>
         </header>
-        <main>
+        <main  ref={el => (this.componentRef = el)}>
           <div>
           <h2>General Information</h2>
             <GeneralInfo />
@@ -72,8 +73,15 @@ class App extends React.Component {
             <button onClick={() => this.handleClick('work')} className='btn addbtn'>Add</button>
           </div>
         </main>
+        <div  className='print'>
+        <ReactToPrint
+          trigger={() => {
+            return <a href="#">Click here to print!</a>;
+          }}
+          content={() => this.componentRef}
+        />
+        </div>
       </div>
-
     );
   }
 }

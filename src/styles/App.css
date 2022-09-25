@@ -4,6 +4,7 @@
 	box-sizing: border-box;
   font-family: 'Courier New', Courier, monospace;
   background-color: #FFFDFB;
+  text-align: center;
 }
 
 main {
@@ -104,4 +105,18 @@ p {
 
 .addbtn {
   margin-bottom: 12px;
+}
+
+.print {
+  margin-top: 6px;
+}
+
+.print a {
+  text-decoration: none;
+  color: black;
+}
+
+.print a:hover {
+  text-decoration: underline;
+  color: black;
 }
