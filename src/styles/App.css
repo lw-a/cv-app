@@ -125,4 +125,10 @@ p {
   .btn, .editbtn {
     display: none;
   }
+  main, h2 {
+    border: none;
+  }
+  h2 {
+    text-decoration: underline;
+  }
 }
