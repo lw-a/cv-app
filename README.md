@@ -4,4 +4,4 @@ CV making application with printing feature built in React. Created to really so
 
 [Live Demo](https://lw-a.github.io/cv-app/) 👈
 
-Example of print CV: [Here](https://drive.google.com/file/d/1S5HGx3Fh8NKAFk3HpyYgeI46Im3hnV9L/view?usp=sharing)👈
+Example of printed CV: [Here](https://drive.google.com/file/d/1S5HGx3Fh8NKAFk3HpyYgeI46Im3hnV9L/view?usp=sharing)👈
